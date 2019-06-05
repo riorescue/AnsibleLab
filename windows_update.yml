@@ -2,9 +2,7 @@
 - hosts: TestingSvr2016
   gather_facts: true
   tasks:
-    - debug: var = ansible_facts
-    - debug: var = ansible_facts['ansible_os_name']
-
+    
     - name: Ensure temporary directory exists at root of C:\
       win_file:
         path: C:\Temp
