@@ -1,5 +1,5 @@
 ---
-- hosts: JPerkinsManagedHosts
+- hosts: TestingSvr2016
   gather_facts: false
   tasks:
     - win_ping:
