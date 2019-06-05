@@ -2,7 +2,9 @@
 - hosts: TestingSvr2016
   gather_facts: true
   tasks:
-
+    - setup:
+      register: ansible_facts
+      
     - name: Ensure temporary directory exists at root of C:\
       win_file:
         path: C:\Temp
