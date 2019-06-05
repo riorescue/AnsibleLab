@@ -1,0 +1,14 @@
+---
+- hosts: TestingSvr2016
+  gather_facts: false
+  tasks:
+
+    - name: Install all security, critical, and rollup updates without a scheduled task
+      win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
+        log_path: C:\temp\ansible_wu.txt
+        reboot: yes
+        reboot_timeout: 400
