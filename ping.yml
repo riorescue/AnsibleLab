@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: JPerkinsManagedHosts
   gather_facts: false
   tasks:
     - win_ping:
