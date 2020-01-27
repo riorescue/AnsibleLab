@@ -4,3 +4,4 @@
       become: true
       apt:
         upgrade: yes
+        force_apt_get: yes
