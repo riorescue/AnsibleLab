@@ -1,4 +1,6 @@
 - hosts: all
+  vars_files:
+    - password
   tasks:
     - name: Test password
       debug:
