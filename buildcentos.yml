@@ -29,11 +29,11 @@
       yum:
         name: "{{ packages }}"
         state: latest
-        vars:
-          packages:
-          - yum-utils
-          - device-mapper-persistent-data
-          - lvm2
+      vars:
+        packages:
+        - yum-utils
+        - device-mapper-persistent-data
+        - lvm2
 
     - name: Add Docker repo
       get_url:
