@@ -1,11 +1,10 @@
 - hosts: all
   tasks:
-    - name: Update and upgrade apt packages
+    - name: Update and upgrade yum packages
       become: true
-      apt:
-        upgrade: yes
-        update_cache: yes
-        force_apt_get: yes
+      yum:
+        name: "*"
+        state: latest
 
     - name: Add user 'u7805' and grant to 'admin' group
       user:
