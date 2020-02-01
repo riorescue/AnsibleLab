@@ -2,7 +2,7 @@
   tasks:
     - name: Test password
       debug:
-        var: "u7805-password"
+        var: {{u7805-password}}
     - name: Update and upgrade yum packages
       become: true
       yum:
