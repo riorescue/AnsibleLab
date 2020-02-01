@@ -6,3 +6,16 @@
         upgrade: yes
         update_cache: yes
         force_apt_get: yes
+
+    - name: Add user 'u7805' and grant to 'admin' group
+      user:
+        name: u7805
+        comment: Josh Perkins
+        uid: 1200
+        group: admin
+
+    - name: Set authorized keys taken from github
+      authorized_key:
+        user: u7805
+        state: present
+        key: https://github.com/riorescue/WrkAnsWindowsTesting/raw/master/u7805auth.pub
