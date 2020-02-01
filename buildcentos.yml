@@ -27,9 +27,10 @@
 
     - name: Install required docker packages
       yum:
-        name: "{{ item }}"
+        name: "{{ packages }}"
         state: latest
-        with_items:
+        vars:
+          packages:
           - yum-utils
           - device-mapper-persistent-data
           - lvm2
