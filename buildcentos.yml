@@ -30,9 +30,9 @@
         name: "{{ item }}"
         state: latest
         with_items:
-        - yum-utils
-        - device-mapper-persistent-data
-        - lvm2
+          - yum-utils
+          - device-mapper-persistent-data
+          - lvm2
 
     - name: Add Docker repo
       get_url:
