@@ -15,6 +15,7 @@
       user:
         name: u7805
         comment: Josh Perkins
+        password: password
         uid: 1200
         group: wheel
 
