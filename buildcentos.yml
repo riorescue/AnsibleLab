@@ -11,7 +11,7 @@
         name: u7805
         comment: Josh Perkins
         uid: 1200
-        group: admin
+        group: wheel
 
     - name: Set authorized keys taken from github
       authorized_key:
