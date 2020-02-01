@@ -1,6 +1,6 @@
 - hosts: all
   vars_files:
-    - password
+    - /var/lib/awx/projects/_9__josh_git_repo/password.yml
   tasks:
     - name: Test password
       debug:
