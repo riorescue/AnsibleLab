@@ -1,6 +1,6 @@
 - hosts: all
   vars_files:
-    - /var/lib/awx/projects/_9__josh_git_repo/pwvault.yml
+    - pwvault.yml
   tasks:
     - name: Test password
       debug:
