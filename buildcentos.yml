@@ -2,9 +2,10 @@
   vars_files:
     - pwvault.yml
   tasks:
-    - hostname:
-      name: "{{ hostname }}"
-      use: redhat
+    - name: Set hostname
+      hostname:
+        name: "{{ hostname }}"
+        use: redhat
 
     - name: Test password
       debug:
